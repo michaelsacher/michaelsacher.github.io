@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Aerospace Engineer</title>
+    <!-- EDIT: Change to your name and title -->
+    <title>Michael Sacher | Aerospace Engineer</title>
     <style>
         * {
             margin: 0;
@@ -17,7 +18,9 @@
             color: #333;
         }
         
+        /* HEADER SECTION - Your name and tagline at top */
         header {
+            /* EDIT: Change gradient colors here - use https://cssgradient.io/ to generate */
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 100px 20px;
@@ -34,8 +37,9 @@
             opacity: 0.9;
         }
         
+        /* NAVIGATION BAR - Sticky menu at top */
         nav {
-            background: #333;
+            background: #333; /* EDIT: Change nav background color */
             padding: 15px;
             text-align: center;
             position: sticky;
@@ -50,11 +54,11 @@
         }
         
         nav a:hover {
-            color: #667eea;
+            color: #667eea; /* EDIT: Change hover color to match your theme */
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 1200px; /* EDIT: Adjust max width of content */
             margin: 0 auto;
             padding: 40px 20px;
         }
@@ -66,12 +70,13 @@
         h2 {
             font-size: 2em;
             margin-bottom: 20px;
-            color: #667eea;
+            color: #667eea; /* EDIT: Section heading color */
         }
         
+        /* PROJECT CARDS - Grid layout for projects */
         .projects {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* EDIT: Change 300px to adjust card min width */
             gap: 30px;
         }
         
@@ -83,7 +88,7 @@
         }
         
         .project-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-5px); /* EDIT: Cards lift up on hover */
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
         
@@ -94,12 +99,13 @@
         
         .project-card img {
             width: 100%;
-            height: 200px;
+            height: 200px; /* EDIT: Change project image height */
             object-fit: cover;
             border-radius: 4px;
             margin-bottom: 15px;
         }
         
+        /* SKILLS SECTION - Tags for your skills */
         .skills {
             display: flex;
             flex-wrap: wrap;
@@ -107,15 +113,16 @@
         }
         
         .skill-tag {
-            background: #667eea;
+            background: #667eea; /* EDIT: Change skill tag background color */
             color: white;
             padding: 8px 15px;
             border-radius: 20px;
             font-size: 0.9em;
         }
         
+        /* FOOTER - Bottom section with contact links */
         footer {
-            background: #333;
+            background: #333; /* EDIT: Footer background color */
             color: white;
             text-align: center;
             padding: 30px;
@@ -129,17 +136,22 @@
         }
         
         .contact-links a:hover {
-            color: #667eea;
+            color: #667eea; /* EDIT: Link hover color */
         }
     </style>
 </head>
 <body>
+    <!-- HEADER: Your name and main tagline -->
     <header>
-        <h1>Your Name</h1>
+        <!-- EDIT: Replace with your actual name -->
+        <h1>Michael Sacher</h1>
+        <!-- EDIT: Replace with your title/specialization -->
         <p>Aerospace Engineer | Robotics & Mechanical Design</p>
     </header>
     
+    <!-- NAVIGATION: Links to sections on page -->
     <nav>
+        <!-- EDIT: Add/remove links as needed - href="#id" links to section IDs below -->
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
@@ -147,37 +159,50 @@
     </nav>
     
     <div class="container">
+        <!-- ABOUT SECTION -->
         <section id="about">
             <h2>About Me</h2>
+            <!-- EDIT: Write your bio/summary here -->
             <p>Aerospace engineering student passionate about robotics, mechanical design, and systems engineering. Currently founding a combat robotics club and developing innovative engineering solutions.</p>
         </section>
         
+        <!-- PROJECTS SECTION -->
         <section id="projects">
             <h2>Projects</h2>
             <div class="projects">
+                <!-- PROJECT CARD 1 -->
                 <div class="project-card">
+                    <!-- EDIT: Replace placeholder with your image path: images/yourimage.jpg -->
                     <img src="https://via.placeholder.com/400x200" alt="Project 1">
+                    <!-- EDIT: Your project title -->
                     <h3>Combat Robot Design</h3>
+                    <!-- EDIT: Your project description -->
                     <p>Designed complete combat robot in SolidWorks, integrating weapon system, drivetrain, and armor. Analyzed 30+ matches to optimize design.</p>
                 </div>
                 
+                <!-- PROJECT CARD 2 - EDIT OR DELETE THIS CARD -->
                 <div class="project-card">
                     <img src="https://via.placeholder.com/400x200" alt="Project 2">
-                    <h3>Project Name 2</h3>
+                    <h3>Spin Launch Mini</h3>
                     <p>Description of your second project. What did you build? What technologies did you use?</p>
                 </div>
                 
+                <!-- PROJECT CARD 3 - EDIT OR DELETE THIS CARD -->
                 <div class="project-card">
                     <img src="https://via.placeholder.com/400x200" alt="Project 3">
-                    <h3>Project Name 3</h3>
-                    <p>Description of your third project. Highlight key achievements and technical skills.</p>
+                    <h3>Vex Robotics</h3>
+                    <p>Developed advanced motion control systems including PID, odometry, pure pursuit, Ramsete, and Monte Carlo Localization, while designing ~10 robots in Autodesk Inventor; competed in VEX Robotics for 2 seasons, winning 20 awards total including 1 international title.</p>
                 </div>
+                
+                <!-- TO ADD MORE PROJECTS: Copy a project-card div and paste below, then edit content -->
             </div>
         </section>
         
+        <!-- SKILLS SECTION -->
         <section id="skills">
             <h2>Skills</h2>
             <div class="skills">
+                <!-- EDIT: Replace with your actual skills - Add/remove skill-tag spans as needed -->
                 <span class="skill-tag">SolidWorks</span>
                 <span class="skill-tag">CAD Design</span>
                 <span class="skill-tag">Systems Engineering</span>
@@ -185,21 +210,28 @@
                 <span class="skill-tag">Python</span>
                 <span class="skill-tag">MATLAB</span>
                 <span class="skill-tag">3D Printing</span>
+                <!-- TO ADD MORE SKILLS: Copy a skill-tag span and paste here -->
             </div>
         </section>
         
+        <!-- CONTACT SECTION -->
         <section id="contact">
             <h2>Get In Touch</h2>
+            <!-- EDIT: Add your contact message -->
             <p>Interested in collaborating or learning more about my work?</p>
         </section>
     </div>
     
+    <!-- FOOTER: Social links and copyright -->
     <footer>
         <div class="contact-links">
+            <!-- EDIT: Replace with your actual email and social media links -->
             <a href="mailto:your.email@example.com">Email</a>
             <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
             <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <!-- TO ADD MORE LINKS: Copy an <a> tag and paste here -->
         </div>
+        <!-- EDIT: Replace with your name and current year -->
         <p style="margin-top: 20px;">© 2025 Your Name. All rights reserved.</p>
     </footer>
 </body>
