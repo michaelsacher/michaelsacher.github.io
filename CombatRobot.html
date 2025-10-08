@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combat Robot Organization | Michael Sacher</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        nav {
+            background: #333;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        
+        nav a:hover {
+            color: #667eea;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .project-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .project-header h1 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .project-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+            margin: 30px auto;
+            display: block;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .project-content {
+            margin: 30px 0;
+        }
+        
+        .project-content h2 {
+            color: #667eea;
+            margin: 30px 0 15px 0;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .tech-tag {
+            background: #667eea;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        
+        .back-button:hover {
+            background: #5568d3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <div class="project-header">
+            <h1>Combat Robot Organization</h1>
+            <p>Knights Combat Robotics Founding Project</p>
+        </div>
+        
+        <img src="images/robot-main.jpg" alt="Combat Robot CAD" class="project-image">
+        
+        <div class="project-content">
+            <h2>Overview</h2>
+            <p>Led the design and development of a competition-ready combat robot as part of founding the university's first combat robotics club. The project involved comprehensive CAD modeling, systems engineering analysis, and strategic weapon selection based on competitive research.</p>
+            
+            <h2>Technical Details</h2>
+            <p><strong>Weight Class:</strong> 3 lbs (Beetleweight)</p>
+            <p><strong>Weapon Type:</strong> Horizontal spinner/Undercutter design</p>
+            <p><strong>Drive System:</strong> 2-Wheel Drive</p>
+            <p><strong>Armor:</strong> AR500 steel back wedge, UHMW polyethylene sides, Carbon Fiber top plate</p>
+            
+            <h2>Design Process</h2>
+            <p>Analyzed 30+ competitive matches to identify successful design patterns and common failure modes. Used this data to inform weapon selection, armor placement, and overall robot geometry. Applied iterative design methodology to optimize weight distribution and structural integrity.</p>
+            
+            <img src="images/combatbot.jpg" alt="CAD Detail View" class="project-image">
+            
+            <h2>Key Achievements</h2>
+            <ul style="margin-left: 20px;">
+                <li>Completed full CAD assembly in Autodesk Inventor with 30+ components</li>
+                <li>Conducted FEA analysis on critical load-bearing structures</li>
+                <li>Selected optimal motor and battery configuration for weight/power ratio</li>
+                <li>Designed weapon system capable of 15,000+ RPM tip speed</li>
+            </ul>
+            
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">Autodesk Inventor</span>
+                <span class="tech-tag">FEA Analysis</span>
+                <span class="tech-tag">Systems Engineering</span>
+                <span class="tech-tag">Material Selection</span>
+                <span class="tech-tag">CAD Design</span>
+            </div>
+            
+            <h2>Challenges & Solutions</h2>
+            <p><strong>Challenge:</strong> Balancing weapon energy with robot weight constraints.</p>
+            <p><strong>Solution:</strong> Conducted trade studies comparing different motor configurations and used lightweight UHMW for non-critical armor sections.</p>
+            
+            <img src="images/robot-exploded-view.jpg" alt="Exploded View" class="project-image">
+            
+            <h2>Future Development</h2>
+            <p>Currently securing club approval and funding. Next steps include manufacturing components, assembling prototype, and competing in regional competitions. Planning iterative improvements based on testing results.</p>
+        </div>
+        
+        <a href="index.html#projects" class="back-button">← Back to Projects</a>
+    </div>
+</body>
+</html>
