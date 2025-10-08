@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vex Robotics | Michael Sacher</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        nav {
+            background: #333;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        
+        nav a:hover {
+            color: #12288a;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .project-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .project-header h1 {
+            font-size: 2.5em;
+            color: #12288a;
+            margin-bottom: 15px;
+        }
+        
+        .project-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+            margin: 30px auto;
+            display: block;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .project-content {
+            margin: 30px 0;
+        }
+        
+        .project-content h2 {
+            color: #12288a;
+            margin: 30px 0 15px 0;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .tech-tag {
+            background: #12288a;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #12288a;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        
+        .back-button:hover {
+            background: #5568d3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <div class="project-header">
+            <h1>Vex Robotics</h1>
+            <p>Competition Based Robotics Project</p>
+        </div>
+        
+        <img src="images/spinlaunchsketch.jpg" alt="Paper Sketch" class="project-image">
+        
+        <div class="project-content">
+            <h2>Overview</h2>
+            <p>Competed in VEX Robotics for 2 seasons, earning ~15 awards including an international signature event win at Sugar Rush and qualifying for the World Championship. Designed and built ~15 robots using Autodesk Inventor and Fusion, while leading my team as programmer, strategist, designer, and driver during the first season. Combined leadership with advanced technical skills by developing state-level competitive robots, creating innovative autonomous strategies, and applying advanced motion algorithms in C++ to consistently achieve high performance.</p>
+            
+            <h2>Technical Details</h2>
+            <p><strong>Robots Designed:</strong> ~15 across 2 seasons, each applying unique drive bases and scoring mechanisms</p>
+            <p><strong>Programming:</strong> C++ with PROS, implementing custom motion algorithms (PID, Pure Pursuit, Ramsete, Monte Carlo Localization, position resets, and path smoothing)</p>
+            <p><strong>CAD Tools:</strong> Autodesk Inventor & Fusion for pre-build analysis and weakpoint identification</p>
+            <p><strong>Prototyping:</strong> Utilized additive manufacturing (3D printing) for rapid iteration and plastic optimization for weight reduction</p>
+            <p><strong>Design Approach:</strong> Engineering design process reinforced by scouting high-level competitions and open collaboration with advanced teams</p>
+                        
+            <h2>Design Process</h2>
+            <p>Followed the engineering design process from brainstorming through prototyping, applying CAD to identify structural weaknesses before building. During assembly, iterative adjustments were made to resolve overlooked issues. Actively researched high-level competitions and engaged with top-tier teams to refine strategies, while integrating consistent communication within the team to adapt designs quickly. Each subsystem (drive, intake, scoring) was tested and refined for reliability under competition conditions.</p>
+            
+            <img src="images/placeholder.jpg" alt="CAD Detail View" class="project-image">
+            
+            <h2>Key Achievements</h2>
+                <ul style="margin-left: 20px;">
+                  <li>Earned ~15 awards in 2 seasons, including an international signature event win at Sugar Rush</li>
+                  <li>Developed one of the first fully solo Autonomous Win Point routines, boosting competitive rankings significantly</li>
+                  <li>Led team to the State Championship in first season while balancing roles as programmer, strategist, builder, and driver</li>
+                  <li>Qualified for the World Championship with consistent autonomous and advanced motion planning algorithms</li>
+                </ul>
+
+            
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">PROS (C++)</span>
+                <span class="tech-tag">Autodesk Inventor</span>
+                <span class="tech-tag">Fusion 360</span>
+                <span class="tech-tag">Advanced Motion Algorithms</span>
+                <span class="tech-tag">Engineering Design Process</span>
+                <span class="tech-tag">Additive Manufacturing</span>
+              </div>
+            
+            <h2>Challenges & Solutions</h2>
+            <p><strong>Challenge:</strong> In the first season, managing time across programming, building, driving, and team leadership often left little time for testing and refining code.</p>
+            <p><strong>Solution:</strong> Prioritized scheduling and streamlined build processes to create more dedicated programming time, allowing for robust autonomous development.</p>
+            
+            <p><strong>Challenge:</strong> In the second season, autonomous consistency was hindered by odometry drift with an all-Omni wheel drivetrain.</p>
+            <p><strong>Solution:</strong> Implemented path smoothing and more rugged odometry handling in code to increase reliability, which became a cornerstone of competitive performance.</p>
+          
+            <img src="images/vexrobot_cad.jpg" alt="VEX Robotics CAD View" class="project-image">
+            
+            <h2>Future Development</h2>
+            <p>Skills gained from VEX Robotics — including CAD, motion algorithm development, and iterative engineering — are being applied to larger-scale projects such as aerospace prototypes and robotics research. Future projects will expand these experiences by incorporating advanced control systems, data-driven optimization, and cross-disciplinary engineering approaches.</p>
+        </div>
+        
+        <a href="index.html#projects" class="back-button">← Back to Projects</a>
+    </div>
+</body>
+</html>
