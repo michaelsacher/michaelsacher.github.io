@@ -93,8 +93,9 @@
         }
         
         .project-card:hover {
-            transform: translateY(-5px); /* EDIT: Cards lift up on hover */
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transform: translateY(-10px); /* Move up more */
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            z-index: 10; /* Ensures card stays above other content */
         }
         
         .project-card h3 {
