@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin Launch Mini | Michael Sacher</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        nav {
+            background: #333;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        
+        nav a:hover {
+            color: #12288a;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .project-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .project-header h1 {
+            font-size: 2.5em;
+            color: #12288a;
+            margin-bottom: 15px;
+        }
+        
+        .project-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+            margin: 30px auto;
+            display: block;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .project-content {
+            margin: 30px 0;
+        }
+        
+        .project-content h2 {
+            color: #12288a;
+            margin: 30px 0 15px 0;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .tech-tag {
+            background: #12288a;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #12288a;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        
+        .back-button:hover {
+            background: #5568d3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <div class="project-header">
+            <h1>Spin Launch Mini</h1>
+            <p>Data Analysis and Systems Engineeering Project</p>
+        </div>
+        
+        <img src="images/spinlaunchsketch.jpg" alt="Paper Sketch" class="project-image">
+        
+        <div class="project-content">
+            <h2>Overview</h2>
+            <p>Currently developing a scaled-down, portable version of the SpinLaunch system for testing reusable glider concepts. The project combines CAD modeling in SolidWorks, launch simulations and data analysis in Jupyter Notebook, and material selection informed by stress–strain calculations. Emphasizing manufacturability, safety, and iterative validation, the system is designed as a practical platform for exploring launch dynamics on a student-built scale.</p>
+            
+            <h2>Technical Details</h2>
+            <p><strong>Scale:</strong> Portable, student-built launcher (~1/10th scale of SpinLaunch)</p>
+            <p><strong>Launch Purpose:</strong> Testing reusable glider prototypes</p>
+            <p><strong>CAD & Design:</strong> SolidWorks models with motion studies and tolerance analysis</p>
+            <p><strong>Structural Analysis:</strong> Stress and strain calculations to guide material selection</p>
+            <p><strong>Materials:</strong> Aluminum frame, composite or CF launch arm, reinforced polymer housing</p>
+            <p><strong>Electromagnet Study:</strong> Looking into electromagnet release mechanism to connect arm and glider</p>
+            <p><strong>Simulation & Data:</strong> Launch velocity and trajectory modeling in Jupyter Notebook</p>
+            <p><strong>Safety Features:</strong> Containment shielding, controlled release mechanism</p>
+            
+            <h2>Design Process</h2>
+            <p>Researched large-scale SpinLaunch system to understand feasibility and limitations, then adapted concepts for a portable, student-buildable version. Applied iterative CAD modeling in SolidWorks to explore launcher geometry, release mechanisms, and structural supports. Used stress/strain calculations and launch dynamics simulations in Jupyter Notebook to guide material selection, manufacturability, and safety considerations.</p>
+            
+            <img src="images/combatbot.jpg" alt="CAD Detail View" class="project-image">
+            
+            <h2>Key Achievements</h2>
+            <ul style="margin-left: 20px;">
+                <li>Currently developing sketches and finalizing dimensions before moving on to SolidWorks design for the launcher arm, housing, and release system</li>
+                <li>Performed stress/strain analysis through simulation to evaluate material suitability for high-velocity launches</li>
+                <li>Built Jupyter Notebook models for trajectory, velocity, and acceleration predictions</li>
+                <li>Establishing safety framework with containment design and controlled release concepts</li>
+            </ul>
+            
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">SolidWorks CAD</span>
+                <span class="tech-tag">FEA Analysis</span>
+                <span class="tech-tag">Systems Engineering</span>
+                <span class="tech-tag">Jupyter Notebook</span>
+                <span class="tech-tag">Stress/Strain Analysis</span>
+                <span class="tech-tag">Launch Dynamics Simulation</span>
+                <span class="tech-tag">Material Selection</span>
+            </div>
+            
+            <h2>Challenges & Solutions</h2>
+            <p><strong>Challenge:</strong> Designing a launcher capable of achieving high release velocities while keeping the structure lightweight and manufacturable at a student scale.</p>
+            <p><strong>Solution:</strong> Applied stress/strain analysis to optimize material choices (aluminum, composites, reinforced polymers) and used iterative CAD modeling to balance strength, portability, and safety. Simulated launch dynamics in Jupyter Notebook to refine arm length, rotation speed, and release mechanism parameters.</p>
+            
+            <img src="images/spinlaunch_exploded-view.jpg" alt="SpinLaunch Mini Exploded View" class="project-image">
+            
+            <h2>Future Development</h2>
+            <p>Current efforts are focused on finalizing the CAD model and verifying launch dynamics through simulations. Next steps include fabricating key components, assembling an initial prototype, and conducting controlled launch tests to validate trajectory predictions. Iterative improvements will focus on increasing efficiency, enhancing safety features, and integrating data collection tools for flight performance analysis.</p>
+        </div>
+        
+        <a href="index.html#projects" class="back-button">← Back to Projects</a>
+    </div>
+</body>
+</html>
